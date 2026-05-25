@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Princia RASOLOFOMANANA</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/style1.css">
+</head>
+
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+  <div class="header-inner">
+
+    <div class="logo">
+      <img src="images/Designer.png" alt="Logo" />
+    </div>
+
+    <nav class="menu">
+      <a href="Accueil.html">Accueil</a>
+      <a href="Formation.html" >Formation &amp; Certifications</a>
+      <a href="Competences.html">Compétences</a>
+      <a href="expe1.html">Expérience professionnelle</a>
+      <a href="projet.html" class="actif">Projets</a>
+      <a href="loisir.html">Loisirs &amp; Réalisations</a>
+      <a href="referents.html">Référent</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <form class="search" action="#" method="get">
+        <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher">
+        <button type="submit" aria-label="Rechercher">🔍</button>
+      </form>
+      <div class="langue">FR</div>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <nav class="menu-mobile" id="menu-mobile">
+    <a href="Accueil.html">Accueil</a>
+    <a href="Formation.html" >Formation &amp; Certifications</a>
+    <a href="Competences.html">Compétences</a>
+    <a href="expe1.html">Expérience professionnelle</a>
+    <a href="projet.html" class="actif">Projets</a>
+    <a href="loisir.html">Loisirs &amp; Réalisations</a>
+    <a href="referents.html">Référent</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-actions">
+      <form class="search" action="#" method="get">
+        <input type="search" name="q" placeholder="Rechercher...">
+        <button type="submit">🔍</button>
+      </form>
+      <div class="langue">FR</div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ===================== HERO ===================== -->
+<div class="hero-banner">
+  <p class="citation">« Les données ne prennent sens que dans le regard de celui qui les interprète »</p>
+</div>
+
+<!-- ===================== PAGE PROJETS ===================== -->
+<main class="projets-page">
+
+  <div class="fc-header reveal">
+    <h1 class="fc-titre">Mes <span>Projets</span></h1>
+    <p class="fc-sous">Réalisations académiques et professionnelles en Science des Données</p>
+  </div>
+
+  <!-- ======== ONGLETS PRINCIPAUX ======== -->
+  <div class="onglets-principaux">
+    <button class="onglet-principal" onclick="afficherPanneau('pro', this)">
+      <span class="onglet-icone">💼</span>
+      Projets professionnels
+      <span class="onglet-count">2</span>
+    </button>
+    <button class="onglet-principal" onclick="afficherPanneau('aca', this)">
+      <span class="onglet-icone">🎓</span>
+      Projets académiques
+      <span class="onglet-count">9</span>
+    </button>
+  </div>
+
+  <!-- ======================================================
+       PANNEAU PRO
+  ====================================================== -->
+  <div class="panneau-principal" id="panneau-pro">
+    <div class="projets-grid">
+
+      <!-- PRO 1 -->
+      <div class="projet-card reveal">
+        <div class="projet-card-top">
+          <div class="projet-categorie pro">Professionnel</div>
+          <div class="projet-annee">Nov. 2025</div>
+        </div>
+        <div class="projet-entreprise">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Renault_2021_Text.svg/200px-Renault_2021_Text.svg.png"
+               alt="Renault" class="projet-logo" onerror="this.style.display='none'">
+          <span>Renault Group</span>
+        </div>
+        <h3 class="projet-titre">🤖 Automatisation du traitement des données DOA – Contrôle Sponsorship</h3>
+        <p class="projet-desc">Automatisation de l'enrichissement de la base DOA via Workday pour améliorer le contrôle Sponsorship au sein du Contrôle Interne.</p>
+        <div class="projet-tags">
+          <span>Python</span><span>Pandas</span><span>Excel</span><span>Workday</span><span>Automatisation</span>
+        </div>
+        <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+          <span class="btn-texte">Voir les détails</span>
+          <span class="btn-icone">↓</span>
+        </button>
+        <div class="projet-details">
+          <div class="projet-section-detail">
+            <h4>🧩 Contexte</h4>
+            <p>La base DOA initiale était incomplète sur des champs clés (company, location hierarchy). La complétion manuelle via Workday était longue et source d'erreurs.</p>
+          </div>
+          <div class="projet-section-detail">
+            <h4>⚙️ Méthodes</h4>
+            <ul>
+              <li>Lecture et traitement du fichier DOA en Python</li>
+              <li>Correspondance automatique avec fichiers Workday par mois/année</li>
+              <li>Extraction automatique de Company et Location Hierarchy</li>
+              <li>Détection des fichiers OneDrive + mise en cache</li>
+              <li>Export final du fichier enrichi</li>
+            </ul>
+          </div>
+          <div class="projet-section-detail">
+            <h4>📊 Résultats</h4>
+            <ul>
+              <li>Gain de temps significatif - processus entièrement automatisé</li>
+              <li>Réduction des erreurs liées au traitement manuel</li>
+              <li>Base exploitable pour le contrôle Sponsorship</li>
+            </ul>
+          </div>
+          <div class="projet-competences">
+            <span>Automatisation</span><span>Data processing</span>
+            <span>Données RH</span><span>Contrôle interne</span>
+          </div>
+          <!-- FICHIERS — place tes fichiers dans projets/doa/ -->
+          <div class="projet-files">
+            <p class="projet-files-titre">📎 Documents joints</p>
+            <div class="fichiers-liste">
+              <a href="doc/pro/Script.py" class="fichier-lien" download>
+                <span class="fichier-icone">🐍</span>
+                <div class="fichier-info">
+                  <div class="fichier-nom">script_doa.py</div>
+                  <div class="fichier-type">Script Python</div>
+                </div>
+                <span class="fichier-action">⬇ Télécharger</span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRO 2 -->
+      <div class="projet-card reveal">
+        <div class="projet-card-top">
+          <div class="projet-categorie pro">Professionnel</div>
+          <div class="projet-annee">Fév. 2026</div>
+        </div>
+        <div class="projet-entreprise">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Renault_2021_Text.svg/200px-Renault_2021_Text.svg.png"
+               alt="Renault" class="projet-logo" onerror="this.style.display='none'">
+          <span>Renault Group</span>
+        </div>
+        <h3 class="projet-titre">📊 Visualisation du contrôle – Accès aux systèmes IT à risque (SAP)</h3>
+        <p class="projet-desc">Dashboard Power BI pour analyser les accès aux systèmes SAP critiques, détecter les anomalies et identifier les profils à risque.</p>
+        <div class="projet-tags">
+          <span>Power BI</span><span>Données SAP</span><span>Excel</span><span>DataViz</span><span>Contrôle interne</span>
+        </div>
+        <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+          <span class="btn-texte">Voir les détails</span>
+          <span class="btn-icone">↓</span>
+        </button>
+        <div class="projet-details">
+          <div class="projet-section-detail">
+            <h4>🧩 Contexte</h4>
+            <p>Surveillance des accès aux systèmes SAP critiques dans le cadre du contrôle interne. L'analyse brute était inexploitable sans outil de visualisation.</p>
+          </div>
+          <div class="projet-section-detail">
+            <h4>⚙️ Méthodes</h4>
+            <ul>
+              <li>Intégration des données utilisateurs SAP dans Power BI</li>
+              <li>Croisement avec la matrice de risques</li>
+              <li>Détection des rôles incompatibles et accès injustifiés</li>
+              <li>Visualisations interactives : transactions sensibles, conflictuelles, statuts</li>
+            </ul>
+          </div>
+          <div class="projet-section-detail">
+            <h4>📊 Résultats</h4>
+            <ul>
+              <li>Identification rapide des profils à risque</li>
+              <li>Visualisation claire des anomalies</li>
+              <li>Support décisionnel pour le contrôle interne</li>
+            </ul>
+          </div>
+          <div class="projet-competences">
+            <span>Data visualisation</span><span>Contrôle interne</span>
+            <span>Analyse risques IT</span><span>Data governance</span>
+          </div>
+          <!-- FICHIERS — place tes fichiers dans projets/sap/ -->
+          <div class="projet-files">
+            <p class="projet-files-titre">📎 Documents joints</p>
+            <div class="fichiers-liste">
+              <a href="doc/pro/IT01.png" class="fichier-lien" download>
+                <span class="fichier-icone">📊</span>
+                <div class="fichier-info">
+                  <div class="fichier-nom">dashboard_sap.pbix</div>
+                  <div class="fichier-type">Dashboard Power BI</div>
+                </div>
+                <span class="fichier-action">⬇ Télécharger</span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================
+       PANNEAU ACADÉMIQUE
+  ====================================================== -->
+  <div class="panneau-principal" id="panneau-aca">
+
+    <!-- Sous-onglets BUT 2 / BUT 1 -->
+    <div class="sous-onglets">
+      <button class="sous-onglet" onclick="afficherBut('but2', this)">
+        📘 BUT 2 - Science des Données
+        <span class="onglet-count" style="background:var(--bleu-bg);color:var(--bleu-fonce);font-size:10px;padding:2px 7px;border-radius:6px;margin-left:4px;">3</span>
+      </button>
+      <button class="sous-onglet" onclick="afficherBut('but1', this)">
+        📗 BUT 1 - Science des Données
+        <span class="onglet-count" style="background:#e8f5e9;color:#1a5c2a;font-size:10px;padding:2px 7px;border-radius:6px;margin-left:4px;">6</span>
+      </button>
+    </div>
+
+    <!-- ---- BUT 2 ---- -->
+    <div class="panneau-but" id="panneau-but2">
+      <div class="projets-grid">
+
+        <!-- BUT2 - SOLAIRE -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but2">BUT 2</div>
+            <div class="projet-annee">Dec. 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">🌞 Analyse et prévision de la production d'énergie solaire (États-Unis)</h3>
+          <p class="projet-desc">Étude de séries temporelles sur la production solaire américaine 2001-2024 : tendance, saisonnalité, prévisions ARIMA et Holt-Winters.</p>
+          <div class="projet-tags">
+            <span>R</span><span>Séries temporelles</span><span>ARIMA</span><span>Holt-Winters</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Transformation série temporelle + stabilisation log</li>
+                <li>Décomposition : tendance, saisonnalité, résidus</li>
+                <li>Modèles : tendance+saisonnalité, Holt-Winters, ARIMA</li>
+                <li>Comparaison des performances via EQM</li>
+              </ul>
+            </div>
+            <div class="projet-section-detail">
+              <h4>📊 Résultats</h4>
+              <ul>
+                <li>Forte croissance solaire post-2010 identifiée</li>
+                <li>ARIMA offre les prévisions les plus précises</li>
+                <li>Projection d'une augmentation continue en 2025</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>Séries temporelles</span><span>Modélisation statistique</span>
+              <span>Forecasting</span><span>Data visualization</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT2/DAVID_RASOLOFOMANANA_BUT2_VCOD_Donnees_solaires (1).pdf" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_solaire.pdf</div>
+                    <div class="fichier-type">Rapport PDF</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT2 - RGPD -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but2">BUT 2</div>
+            <div class="projet-annee">Janv. 2026</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">🔐 Analyse de conformité RGPD – Projet badges vs MyTime</h3>
+          <p class="projet-desc">Évaluation d'un projet RH sous l'angle RGPD : non-conformités, risques données personnelles, recommandations Privacy by Design.</p>
+          <div class="projet-tags">
+            <span>RGPD</span><span>Excel</span><span>Conformité</span><span>Data Governance</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Identification des données traitées et données sensibles</li>
+                <li>Vérification des 6 principes RGPD</li>
+                <li>Analyse des risques : profilage, décisions automatisées, sécurité</li>
+                <li>Recommandations Privacy by Design</li>
+              </ul>
+            </div>
+            <div class="projet-section-detail">
+              <h4>📊 Résultats</h4>
+              <ul>
+                <li>Nombreuses non-conformités identifiées</li>
+                <li>Absence de base juridique claire</li>
+                <li>Recommandations concrètes formulées</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>RGPD</span><span>Analyse de conformité</span>
+              <span>Gouvernance données</span><span>Gestion des risques</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT2/DAVID_RASOLOFOMANANA_BUT2FA_VCOD_grille_conformite (2).xlsx" class="fichier-lien" download>
+                  <span class="fichier-icone">📊</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">grille_conformite.xlsx</div>
+                    <div class="fichier-type">Grille Excel</div>
+                  </div>
+                  <span class="fichier-action">⬇ Télécharger</span>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT2 - PARCOURSUP -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but2">BUT 2</div>
+            <div class="projet-annee">Fév. 2026</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris – Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">🎓 Analyse des facteurs d'admission post-bac – Parcoursup</h3>
+          <p class="projet-desc">Analyse ETL + Power BI des facteurs influençant les taux d'accès Parcoursup : formations, profils candidats, disparités régionales.</p>
+          <div class="projet-tags">
+            <span>Power BI</span><span>Power Query</span><span>ETL</span><span>Excel</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Extraction données Parcoursup + transformation Power Query</li>
+                <li>Analyse taux d'accès par formation, capacité, région</li>
+                <li>Étude des profils candidats</li>
+                <li>Visualisation interactive Power BI</li>
+              </ul>
+            </div>
+            <div class="projet-section-detail">
+              <h4>📊 Résultats</h4>
+              <ul>
+                <li>Caractéristiques des formations = facteur principal</li>
+                <li>Inégalités régionales et par filière identifiées</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>ETL</span><span>Data visualisation</span>
+              <span>Analyse de données</span><span>Travail en équipe</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT2/DAVID_RASOLOFOMANANA_SAYYOURI_dashboard_integration (2).pbix" class="fichier-lien" download>
+                  <span class="fichier-icone">📊</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">dashboard_parcoursup.pbix</div>
+                    <div class="fichier-type">Dashboard Power BI</div>
+                  </div>
+                  <span class="fichier-action">⬇ Télécharger</span>
+                </a>
+                <a href="doc/academique/BUT2/DAVID_RASOLOFOMANANA_SAYYOURI_support_visuel_integration (2).pptx" class="fichier-lien" download>
+                  <span class="fichier-icone">📑</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">support_visuel.pptx</div>
+                    <div class="fichier-type">Présentation PowerPoint</div>
+                  </div>
+                  <span class="fichier-action">⬇ Télécharger</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---- BUT 1 ---- -->
+    <div class="panneau-but" id="panneau-but1">
+      <div class="projets-grid">
+
+        <!-- BUT1 - MORTALITE -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Fév.–Juin 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">💀 Facteurs de mortalité en soins intensifs – Analyse de données cliniques (USA)</h3>
+          <p class="projet-desc">Identification des facteurs de mortalité en réanimation à partir d'une base multicentrique américaine — data, statistiques et gestion de projet.</p>
+          <div class="projet-tags">
+            <span>R</span><span>Régression logistique</span><span>MS Project</span><span>Waterfall</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes — 3 volets</h4>
+              <ul>
+                <li><strong>Data :</strong> nettoyage, doublons, valeurs manquantes, sélection de variables</li>
+                <li><strong>Statistiques :</strong> analyse descriptive, tests d'hypothèses, modélisation logistique multivariée</li>
+                <li><strong>Gestion de projet :</strong> méthode Waterfall, planning MS Project</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>Waterfall</span><span>Régression logistique</span>
+              <span>Nettoyage de données</span><span>Communication scientifique</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/Rapport_SAEprojet_BASARAN_DAVID_EL_DAHDAH_RASOLOFOMANANA_G13_14.pdf" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📈</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_mortalite.pdf</div>
+                    <div class="fichier-type">Rapport PDF</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+                <a href="doc/academique/BUT1/BASARAN_DAVID_EL-DAHDAH_RASOLOFOMANANA_Rapport_Conduite_de_projet_G13-14.pdf" class="fichier-lien" download>
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">conduite_de_projet.pdf</div>
+                    <div class="fichier-type">Conduite de Projet</div>
+                  </div>
+                  <span class="fichier-action">⬇ Télécharger</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT1 - ETOILES -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Mai–Juin 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">⭐ Estimation statistique de la distance moyenne des étoiles à partir d'échantillons astronomiques</h3>
+          <p class="projet-desc">Analyse statistique de 39 552 étoiles pour estimer la distance moyenne et étudier l'effet de la taille d'échantillon.</p>
+          <div class="projet-tags">
+            <span>R</span><span>Tests statistiques</span><span>Intervalles de confiance</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Analyse descriptive : moyenne, variance, quantiles</li>
+                <li>Intervalles de confiance (n=30 et n=100)</li>
+                <li>Tests t + interprétation p-values</li>
+                <li>Visualisation : densités, zones de rejet</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>Estimation statistique</span><span>Tests d'hypothèses</span><span>R</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/RENDU_SAE-Estimation_Plx_30_1_et_Plx_100_1_Eda_BASARAN_et_Santatriniaina_RASOLOFOMANANA_G13.pdf" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_etoiles.pdf</div>
+                    <div class="fichier-type">Rapport PDF</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT1 - DVD -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Janv. 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">🎬 Reporting et stratégie pour un espace de location de DVD</h3>
+          <p class="projet-desc">Analyse des comportements clients pour recommander les bons films et piloter la stratégie d'un service de location.</p>
+          <div class="projet-tags">
+            <span>SQL</span><span>Excel</span><span>Reporting</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Nettoyage des données clients</li>
+                <li>Analyse par catégorie, région, préférences</li>
+                <li>Reporting structuré + recommandations business</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>SQL</span><span>Reporting</span><span>Analyse client</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/Reporting-BASARAN_RASOLOFOMANANA_G-13.xlsx" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">reporting_dvd.xlsx</div>
+                    <div class="fichier-type">Reporting XLSX</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT1 - CROISSANCE -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Juin 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">📈 Régression polynomiale sur données de croissance infantile – Sri Lanka &amp; République Dominicaine</h3>
+          <p class="projet-desc">Modélisation et comparaison des courbes de croissance (5–19 ans) entre deux pays — étude internationale 2020, 90+ pays.</p>
+          <div class="projet-tags">
+            <span>R</span><span>Régression polynomiale</span><span>Stats multivariées</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Analyse uni-, bi- et multivariée</li>
+                <li>Régression polynomiale par groupe</li>
+                <li>Courbes de médiane, Q1, Q3 par classe d'âge</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>Régression polynomiale</span><span>Modélisation</span><span>R</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/SAE_Régression_DataProjet_23_BASARAN_RASOLOFOMANANA_ABDERAMAN.pdf" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_croissance.pdf</div>
+                    <div class="fichier-type">Rapport PDF</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT1 - KPI SODEXO -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Mai 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris - Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">📊 Analyse des indicateurs clés de performance (KPI) – Étude de Sodexo</h3>
+          <p class="projet-desc">Identification et analyse des KPI financiers et extra-financiers de Sodexo à partir de son document d'enregistrement universel.</p>
+          <div class="projet-tags">
+            <span>Finance</span><span>KPI</span><span>Reporting</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Extraction KPI du document universel Sodexo</li>
+                <li>Croisement indicateurs financiers et extra-financiers</li>
+                <li>Rédaction d'un rapport de synthèse</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>KPI</span><span>Analyse financière</span><span>Gestion</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/SAE_Gestion_BASARAN_RASOLOFOMANANA_Sodexo_G13.pdf" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_kpi_sodexo.pdf</div>
+                    <div class="fichier-type">Rapport PDF</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUT1 - BDD RETAIL -->
+        <div class="projet-card reveal">
+          <div class="projet-card-top">
+            <div class="projet-categorie but1">BUT 1</div>
+            <div class="projet-annee">Mai–Juin 2025</div>
+          </div>
+          <div class="projet-entreprise">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/98/Logo_IUT_de_Paris_-_Rives_de_Seine.svg/200px-Logo_IUT_de_Paris_-_Rives_de_Seine.svg.png"
+                 alt="IUT Paris" class="projet-logo" onerror="this.style.display='none'">
+            <span>IUT de Paris – Rives de Seine</span>
+          </div>
+          <h3 class="projet-titre">🗄️ Conception et implémentation d'une base de données de la grande distribution (Leclerc, Auchan, Carrefour)</h3>
+          <p class="projet-desc">Conception MCD/MLD et analyse SQL d'une base retail pour améliorer la productivité de 5% via analyse des effectifs et volumes de vente.</p>
+          <div class="projet-tags">
+            <span>SQL</span><span>Access</span><span>Looping</span><span>MCD/MLD</span>
+          </div>
+          <button class="btn-projet" onclick="toggleProjet(this)" aria-expanded="false">
+            <span class="btn-texte">Voir les détails</span><span class="btn-icone">↓</span>
+          </button>
+          <div class="projet-details">
+            <div class="projet-section-detail">
+              <h4>⚙️ Méthodes</h4>
+              <ul>
+                <li>Conception MCD (Looping) et MLD (Access)</li>
+                <li>Intégration fichiers multi-formats + nettoyage</li>
+                <li>Dictionnaire des données + requêtes SQL</li>
+                <li>État d'audit Excel : anomalies et écarts productivité</li>
+              </ul>
+            </div>
+            <div class="projet-competences">
+              <span>Modélisation données</span><span>SQL</span>
+              <span>Audit qualité</span><span>Structuration de données</span>
+            </div>
+            <div class="projet-files">
+              <p class="projet-files-titre">📎 Documents joints</p>
+              <div class="fichiers-liste">
+                <a href="doc/academique/BUT1/SAE_SGBD_Série_132 –AZIZI_BASARAN_BOUDJELIDA_RASOLOFOMANANA.docx" class="fichier-lien" target="_blank">
+                  <span class="fichier-icone">📄</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">rapport_retail.doc</div>
+                    <div class="fichier-type">Rapport DOC</div>
+                  </div>
+                  <span class="fichier-action">👁 Aperçu</span>
+                </a>
+                <a href="doc/academique/BUT1/SAE_SGBD_Série132-AZIZI_BASARAN_BOUDJELIDA_RASOLOFOMANANA.xlsx" class="fichier-lien" download>
+                  <span class="fichier-icone">🗄️</span>
+                  <div class="fichier-info">
+                    <div class="fichier-nom">Audit.xlsx</div>
+                    <div class="fichier-type">Etat Audit</div>
+                  </div>
+                  <span class="fichier-action">⬇ Télécharger</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- fin panneau-aca -->
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <div class="footer-col footer-identite">
+      <img src="images/Designer.png" alt="Logo personnel">
+      <p class="footer-name">Princia RASOLOFOMANANA</p>
+      <p class="footer-desc">
+        Étudiante en BUT Science des Données<br>
+        Apprentie Responsable Méthodes et Outils<br>
+        Contrôle Interne
+      </p>
+    </div>
+
+    <div class="footer-col footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="Formation.html">Formation et Certifications</a></li>
+        <li><a href="Competences.html">Compétences</a></li>
+        <li><a href="expe1.html">Expérience professionnelle</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="loisir.html">Loisirs et réalisations</a></li>
+        <li><a href="referents.html">Référents</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-reseaux">
+      <h4>Réseaux</h4>
+      <div class="footer-socials">
+        <a class="social" href="#" aria-label="LinkedIn">in</a>
+        <a class="social" href="mailto:princiarslfm@gmail.com" aria-label="Email">✉</a>
+        <a class="social" href="tel:+33765880897" aria-label="Téléphone">📞</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-middle">
+    © 2026 – Princia RASOLOFOMANANA. Tous droits réservés.<br>
+    Pensé et développé par Princia
+  </div>
+
+  <div class="footer-bottom">
+    <a href="#">Informations légales</a> |
+    <a href="#">Politique de confidentialité</a> |
+    <a href="#">Accessibilité : non conforme</a> |
+    <a href="#">Gestion des cookies</a>
+  </div>
+
+</footer>
+
+<script>
+  // Hamburger
+  const btn = document.getElementById('hamburger');
+  const nav = document.getElementById('menu-mobile');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('ouvert');
+    nav.classList.toggle('ouvert');
+  });
+  nav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+    btn.classList.remove('ouvert');
+    nav.classList.remove('ouvert');
+  }));
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ---- Onglets principaux Pro / Académique ----
+  function afficherPanneau(id, bouton) {
+    document.querySelectorAll('.panneau-principal').forEach(p => p.classList.remove('actif'));
+    document.querySelectorAll('.onglet-principal').forEach(b => b.classList.remove('actif'));
+    document.getElementById('panneau-' + id).classList.add('actif');
+    bouton.classList.add('actif');
+
+    // Re-trigger reveal sur les cartes visibles
+    setTimeout(() => {
+      document.querySelectorAll('#panneau-' + id + ' .reveal').forEach(el => {
+        observer.observe(el);
+      });
+    }, 50);
+  }
+
+  // ---- Sous-onglets BUT 1 / BUT 2 ----
+  function afficherBut(id, bouton) {
+    document.querySelectorAll('.panneau-but').forEach(p => p.classList.remove('actif'));
+    document.querySelectorAll('.sous-onglet').forEach(b => b.classList.remove('actif'));
+    document.getElementById('panneau-' + id).classList.add('actif');
+    bouton.classList.add('actif');
+
+    setTimeout(() => {
+      document.querySelectorAll('#panneau-' + id + ' .reveal').forEach(el => {
+        observer.observe(el);
+      });
+    }, 50);
+  }
+
+  // ---- Toggle détails projet ----
+  function toggleProjet(bouton) {
+    const details = bouton.nextElementSibling;
+    const ouvert = bouton.getAttribute('aria-expanded') === 'true';
+    if (ouvert) {
+      details.style.maxHeight = '0px';
+      details.style.opacity = '0';
+      details.classList.remove('ouvert');
+      bouton.setAttribute('aria-expanded', 'false');
+      bouton.querySelector('.btn-texte').textContent = 'Voir les détails';
+      bouton.querySelector('.btn-icone').style.transform = 'rotate(0deg)';
+    } else {
+      details.classList.add('ouvert');
+      details.style.maxHeight = details.scrollHeight + 'px';
+      details.style.opacity = '1';
+      bouton.setAttribute('aria-expanded', 'true');
+      bouton.querySelector('.btn-texte').textContent = 'Réduire';
+      bouton.querySelector('.btn-icone').style.transform = 'rotate(180deg)';
+    }
+  }
+</script>
+
+</body>
+</html>
